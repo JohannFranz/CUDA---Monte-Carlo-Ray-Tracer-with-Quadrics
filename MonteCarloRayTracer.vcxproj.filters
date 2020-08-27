@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="Ray.cu">
+      <Filter>Ray</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Hit.cu">
+      <Filter>Ray</Filter>
+    </CudaCompile>
+    <CudaCompile Include="RigidEntityList.cu">
+      <Filter>Entities</Filter>
+    </CudaCompile>
+    <CudaCompile Include="MaterialList.cu">
+      <Filter>Material</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CudaRayTracingManager.cu">
+      <Filter>Manager</Filter>
+    </CudaCompile>
+    <CudaCompile Include="SeedGenerator.cu">
+      <Filter>Math</Filter>
+    </CudaCompile>
+    <CudaCompile Include="LightList.cu">
+      <Filter>Light</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DirectionalLight.cu">
+      <Filter>Light</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Camera.cu">
+      <Filter>Ray</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ApplicationManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CudaParams.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="WindowConstants.h" />
+    <ClInclude Include="Vec3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidEntityList.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialList.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Ray</Filter>
+    </ClInclude>
+    <ClInclude Include="HitPosition.h">
+      <Filter>Ray</Filter>
+    </ClInclude>
+    <ClInclude Include="Hit.h">
+      <Filter>Ray</Filter>
+    </ClInclude>
+    <ClInclude Include="SeedGenerator.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaRayTracingManager.cuh">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.cuh">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="LightList.cuh">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.cuh">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDF.cuh">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.cuh" />
+    <ClInclude Include="Sphere.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Ray</Filter>
+    </ClInclude>
+    <ClInclude Include="Cone.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Paraboloid.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Hyperboloid.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperboloidConnected.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperbolicParaboloid.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Ellipsoid.cuh">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="TransparentMaterial.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{21458429-1f2a-47b9-aa07-7be9dfa09e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{8d346539-9df7-4112-82fe-8443c87f9580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{fd5ff4df-c8ab-4654-a7a0-9769cac9a8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ray">
+      <UniqueIdentifier>{2598542d-6f65-47c0-922e-6b19c4ff6662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{76577033-0416-49d9-93ae-fe5c21475325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{f00a90e9-f2ba-43a7-ab16-707ac48c56f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
